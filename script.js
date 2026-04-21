@@ -68,6 +68,10 @@ function buildSlides() {
 }
 
 function updateProgress(index) {
+  if (!progressFill) {
+    return;
+  }
+
   const progress = ((index + 1) / introPhotos.length) * 100;
   progressFill.style.width = `${progress}%`;
 }
@@ -111,7 +115,9 @@ function finishIntro() {
     intervalId = null;
   }
 
-  progressFill.style.width = "100%";
+  if (progressFill) {
+    progressFill.style.width = "100%";
+  }
   introFinish.classList.add("visible");
 
   const activeSlide = document.querySelector(".slide.active");
