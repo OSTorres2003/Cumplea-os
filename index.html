@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleanos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-only">
+  <main class="celebration-page standalone-page" id="celebrationPage">
+    <div class="page-backdrop" aria-hidden="true"></div>
+    <div class="page-overlay" aria-hidden="true"></div>
+    <div class="page-stars" aria-hidden="true"></div>
+    <div class="party-decor" aria-hidden="true">
+      <span class="confetti confetti-a"></span>
+      <span class="confetti confetti-b"></span>
+      <span class="confetti confetti-c"></span>
+      <span class="balloon balloon-a"></span>
+      <span class="balloon balloon-b"></span>
+      <span class="balloon balloon-c"></span>
+    </div>
+
+    <section class="page-hero reveal is-visible">
+      <div class="hero-badge-row">
+        <span class="hero-badge">Fiesta infantil</span>
+        <span class="hero-badge">Mucho amor</span>
+        <span class="hero-badge">Momentos felices</span>
+      </div>
+      <p class="section-tag">Invitacion Especial</p>
+      <h1 class="page-hero-title">Bienvenidos a un cumpleanos lleno de magia, juegos y sonrisas</h1>
+      <p class="page-hero-copy">
+        Un espacio pensado para celebrar con ternura, color y alegria a nuestro pequeno
+        protagonista. Desliza y descubre sus fotos, recuerdos y una cuenta regresiva especial.
+      </p>
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <span></span>
+        <p>Desliza para seguir la fiesta</p>
+      </div>
+    </section>
+
+    <section class="section welcome reveal is-visible">
+      <p class="section-tag">Feliz Cumpleanos</p>
+      <h2>Una pagina hecha con amor para celebrar un dia tan especial</h2>
+      <p class="section-copy">
+        Hoy celebramos sonrisas, travesuras y momentos que llenan el corazon. Esta historia
+        sigue con una galeria tierna, un conteo especial y rincones creados para recordar este
+        cumpleanos con alegria.
+      </p>
+    </section>
+
+    <section class="section gallery-section reveal is-visible">
+      <div class="section-heading">
+        <p class="section-tag">Galeria Principal</p>
+        <h2>Sus mejores fotos en un carrusel grande</h2>
+      </div>
+      <div class="carousel-shell">
+        <button class="carousel-button prev" id="prevSlide" type="button" aria-label="Foto anterior">&lt;</button>
+        <div class="carousel-track" id="carouselTrack"></div>
+        <button class="carousel-button next" id="nextSlide" type="button" aria-label="Foto siguiente">&gt;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots" aria-label="Indicadores del carrusel"></div>
+    </section>
+
+    <section class="section countdown-section reveal is-visible">
+      <div class="countdown-copy">
+        <p class="section-tag">Cuenta Regresiva</p>
+        <h2>Esperando el 4 de mayo</h2>
+        <p>
+          Cada dia nos acerca a otro momento hermoso para celebrar, abrazar y llenar de
+          sonrisas este dia tan esperado.
+        </p>
+      </div>
+      <div class="countdown-grid" id="countdown">
+        <article><span id="days">00</span><p>Dias</p></article>
+        <article><span id="hours">00</span><p>Horas</p></article>
+        <article><span id="minutes">00</span><p>Minutos</p></article>
+        <article><span id="seconds">00</span><p>Segundos</p></article>
+      </div>
+    </section>
+
+    <section class="section story-section reveal is-visible">
+      <div class="section-heading">
+        <p class="section-tag">Diversion Total</p>
+        <h2>Un rincon lleno de color, magia y alegria</h2>
+      </div>
+      <div class="story-grid">
+        <article class="story-card story-card-sun">
+          <h3>Risas que iluminan</h3>
+          <p>Cada sonrisa convierte el dia en una fiesta brillante y llena de ternura.</p>
+        </article>
+        <article class="story-card story-card-star">
+          <h3>Momentos para jugar</h3>
+          <p>Entre colores, luces y fotos, todo invita a celebrar con emocion.</p>
+        </article>
+        <article class="story-card story-card-cloud">
+          <h3>Un cumpleanos magico</h3>
+          <p>Un recuerdo pensado para verse dulce, divertido y especial para toda la familia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wishes-section reveal is-visible">
+      <div class="wish-card">
+        <p class="section-tag">Deseos Bonitos</p>
+        <h2>Que nunca falten los juegos, el amor y la magia</h2>
+        <p>
+          Que cada paso este lleno de curiosidad, ternura y momentos felices al lado de quienes
+          mas te quieren.
+        </p>
+      </div>
+      <div class="mini-gallery">
+        <figure><img src="img/adescarga.jpg" alt="Foto tierna del bebe"><figcaption>Ternura</figcaption></figure>
+        <figure><img src="img/asdfimages.jpg" alt="Foto del bebe sonriendo"><figcaption>Sonrisas</figcaption></figure>
+        <figure><img src="img/dsescarga.png" alt="Foto del bebe jugando"><figcaption>Aventura</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section memory-section reveal is-visible">
+      <p class="section-tag">Momentos Especiales</p>
+      <h2>Un pequeno resumen de un gran protagonista</h2>
+      <div class="memory-grid">
+        <article>
+          <h3>Sonrisa que enamora</h3>
+          <p>Una mirada dulce que convierte cualquier instante en un recuerdo inolvidable.</p>
+        </article>
+        <article>
+          <h3>Energia y alegria</h3>
+          <p>Cada foto transmite la chispa divertida que hace unico este festejo.</p>
+        </article>
+        <article>
+          <h3>Un dia para guardar</h3>
+          <p>Esta pagina fue pensada para revivir la emocion del cumpleanos una y otra vez.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section finale-section reveal is-visible">
+      <p class="section-tag">Cierre Feliz</p>
+      <h2>Gracias por ser parte de esta aventura tan bonita</h2>
+      <p class="section-copy">
+        Que esta celebracion quede guardada como un recuerdo brillante, dulce y divertido para
+        toda la familia.
+      </p>
+      <div class="finale-ribbon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" loop preload="auto" autoplay playsinline>
+    <source src="music/Musica pagina.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
