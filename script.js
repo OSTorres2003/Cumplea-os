@@ -132,7 +132,7 @@ function finishIntro() {
   window.setTimeout(() => {
     introStage.setAttribute("aria-hidden", "true");
     introStage.classList.add("is-hidden");
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   }, 800);
 }
 
